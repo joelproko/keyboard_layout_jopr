@@ -161,11 +161,28 @@ X PB1 9 600 1400 100 L 50 50 1 1 T
 ENDDRAW
 ENDDEF
 #
-# MX_Alps_Hybrid_MX-LED
+# Switch_SW_Push
 #
-DEF MX_Alps_Hybrid_MX-LED MX 0 40 Y Y 1 F N
+DEF Switch_SW_Push SW 0 40 N N 1 F N
+F0 "SW" 50 100 50 H V L CNN
+F1 "Switch_SW_Push" 0 -60 50 H V C CNN
+F2 "" 0 200 50 H I C CNN
+F3 "" 0 200 50 H I C CNN
+DRAW
+C -80 0 20 0 1 0 N
+C 80 0 20 0 1 0 N
+P 2 0 1 0 0 50 0 120 N
+P 2 0 1 0 100 50 -100 50 N
+X 1 1 -200 0 100 R 50 50 0 1 P
+X 2 2 200 0 100 L 50 50 0 1 P
+ENDDRAW
+ENDDEF
+#
+# keyboard_layout_jopr-rescue_MX-LED-MX_Alps_Hybrid
+#
+DEF keyboard_layout_jopr-rescue_MX-LED-MX_Alps_Hybrid MX 0 40 Y Y 1 F N
 F0 "MX" -25 150 60 H V C CNN
-F1 "MX_Alps_Hybrid_MX-LED" -25 50 20 H V C CNN
+F1 "keyboard_layout_jopr-rescue_MX-LED-MX_Alps_Hybrid" -25 50 20 H V C CNN
 F2 "" -625 -25 60 H I C CNN
 F3 "" -625 -25 60 H I C CNN
 DRAW
@@ -186,11 +203,11 @@ X LEDGND 4 0 -100 50 U 0 0 1 1 P
 ENDDRAW
 ENDDEF
 #
-# MX_Alps_Hybrid_MX-NoLED
+# keyboard_layout_jopr-rescue_MX-NoLED-MX_Alps_Hybrid
 #
-DEF MX_Alps_Hybrid_MX-NoLED MX 0 40 Y Y 1 F N
+DEF keyboard_layout_jopr-rescue_MX-NoLED-MX_Alps_Hybrid MX 0 40 Y Y 1 F N
 F0 "MX" -25 150 60 H V C CNN
-F1 "MX_Alps_Hybrid_MX-NoLED" -25 50 20 H V C CNN
+F1 "keyboard_layout_jopr-rescue_MX-NoLED-MX_Alps_Hybrid" -25 50 20 H V C CNN
 F2 "" -625 -25 60 H I C CNN
 F3 "" -625 -25 60 H I C CNN
 DRAW
@@ -204,20 +221,22 @@ X ROW 2 -50 -150 100 U 0 0 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Switch_SW_Push
+# keyboard_layout_jopr-rescue_Molex-0548190589-random-keyboard-parts
 #
-DEF Switch_SW_Push SW 0 40 N N 1 F N
-F0 "SW" 50 100 50 H V L CNN
-F1 "Switch_SW_Push" 0 -60 50 H V C CNN
-F2 "" 0 200 50 H I C CNN
-F3 "" 0 200 50 H I C CNN
+DEF keyboard_layout_jopr-rescue_Molex-0548190589-random-keyboard-parts USB 0 40 Y Y 1 F N
+F0 "USB" 0 300 60 H V C CNN
+F1 "keyboard_layout_jopr-rescue_Molex-0548190589-random-keyboard-parts" 0 400 60 H V C CNN
+F2 "" 0 0 60 H I C CNN
+F3 "" 0 0 60 H I C CNN
 DRAW
-C -80 0 20 0 1 0 N
-C 80 0 20 0 1 0 N
-P 2 0 1 0 0 50 0 120 N
-P 2 0 1 0 100 50 -100 50 N
-X 1 1 -200 0 100 R 50 50 0 1 P
-X 2 2 200 0 100 L 50 50 0 1 P
+S 350 -100 -250 250 0 0 0 f
+P 2 0 0 0 250 -100 250 250 N
+X GND 1 -200 -300 200 U 50 50 1 1 I
+X ID 2 -100 -300 200 U 50 50 1 1 I
+X D+ 3 0 -300 200 U 50 50 1 1 I
+X D- 4 100 -300 200 U 50 50 1 1 I
+X VBUS 5 200 -300 200 U 50 50 1 1 I
+X SHIELD 6 300 -300 200 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
@@ -260,25 +279,6 @@ DRAW
 C 0 75 25 0 1 0 N
 P 2 0 1 0 0 0 0 50 N
 X VCC 1 0 0 0 U 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# random-keyboard-parts_Molex-0548190589
-#
-DEF random-keyboard-parts_Molex-0548190589 USB 0 40 Y Y 1 F N
-F0 "USB" 0 300 60 H V C CNN
-F1 "random-keyboard-parts_Molex-0548190589" 0 400 60 H V C CNN
-F2 "" 0 0 60 H I C CNN
-F3 "" 0 0 60 H I C CNN
-DRAW
-S 350 -100 -250 250 0 0 0 f
-P 2 0 0 0 250 -100 250 250 N
-X GND 1 -200 -300 200 U 50 50 1 1 I
-X ID 2 -100 -300 200 U 50 50 1 1 I
-X D+ 3 0 -300 200 U 50 50 1 1 I
-X D- 4 100 -300 200 U 50 50 1 1 I
-X VBUS 5 200 -300 200 U 50 50 1 1 I
-X SHIELD 6 300 -300 200 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
