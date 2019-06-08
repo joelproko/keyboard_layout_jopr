@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:keyboard_layout_jopr-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -596,33 +597,31 @@ F 3 "" H 9925 3375 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9650 6150 9700 6150
+	10050 6150 10100 6150
 $Comp
-L Device:D_Small D_O5
+L Device:D_Small D_P5
 U 1 1 5EF0BE75
-P 9650 6250
-F 0 "D_O5" H 9650 6350 50  0000 R CNN
-F 1 "SOD-123" H 9700 6350 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-123" V 9650 6250 50  0001 C CNN
-F 3 "~" V 9650 6250 50  0001 C CNN
-	1    9650 6250
+P 10050 6250
+F 0 "D_P5" H 10050 6350 50  0000 R CNN
+F 1 "SOD-123" H 10100 6350 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-123" V 10050 6250 50  0001 C CNN
+F 3 "~" V 10050 6250 50  0001 C CNN
+	1    10050 6250
 	0    -1   -1   0   
 $EndComp
 $Comp
-L MX_Alps_Hybrid:MX-NoLED MX_O5
+L MX_Alps_Hybrid:MX-NoLED MX_P5
 U 1 1 5EF0BE7B
-P 9750 6000
-F 0 "MX_O5" H 9783 6223 60  0000 C CNN
-F 1 "MX-NoLED" H 9783 6149 20  0000 C CNN
-F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 9125 5975 60  0001 C CNN
-F 3 "" H 9125 5975 60  0001 C CNN
-	1    9750 6000
+P 10150 6000
+F 0 "MX_P5" H 10183 6223 60  0000 C CNN
+F 1 "MX-NoLED" H 10183 6149 20  0000 C CNN
+F 2 "MX_Alps_Hybrid:MX-1U-NoLED" H 9525 5975 60  0001 C CNN
+F 3 "" H 9525 5975 60  0001 C CNN
+	1    10150 6000
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	9250 6150 9300 6150
-Wire Wire Line
-	9650 6350 9250 6350
 Connection ~ 9250 6350
 $Comp
 L Device:D_Small D_N5
@@ -714,8 +713,7 @@ F 3 "~" V 9650 5600 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	9900 5300 9900 5950
-Connection ~ 9900 5300
+	10300 5300 10300 5950
 $Comp
 L MX_Alps_Hybrid:MX-NoLED MX_O4
 U 1 1 5EF0BEB7
@@ -3156,9 +3154,6 @@ F 3 "" H 10325 5325 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 10700 5300
-Connection ~ 9650 6350
-Wire Wire Line
-	9650 6350 10450 6350
 Wire Wire Line
 	10700 5300 10700 5950
 Wire Wire Line
@@ -3760,4 +3755,10 @@ Text GLabel 3150 2800 2    50   Input ~ 0
 COL_I
 Text GLabel 3150 2700 2    50   Input ~ 0
 COL_J
+Connection ~ 10050 6350
+Wire Wire Line
+	10050 6350 10450 6350
+Connection ~ 10300 5300
+Wire Wire Line
+	9250 6350 10050 6350
 $EndSCHEMATC
