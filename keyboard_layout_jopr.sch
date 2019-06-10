@@ -380,19 +380,14 @@ $EndComp
 $Comp
 L power:VCC #PWR01
 U 1 1 5CFCA327
-P 1500 1000
-F 0 "#PWR01" H 1500 850 50  0001 C CNN
-F 1 "VCC" H 1517 1173 50  0000 C CNN
-F 2 "" H 1500 1000 50  0001 C CNN
-F 3 "" H 1500 1000 50  0001 C CNN
-	1    1500 1000
+P 1750 1000
+F 0 "#PWR01" H 1750 850 50  0001 C CNN
+F 1 "VCC" H 1767 1173 50  0000 C CNN
+F 2 "" H 1750 1000 50  0001 C CNN
+F 3 "" H 1750 1000 50  0001 C CNN
+	1    1750 1000
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1300 1000 1500 1000
-Connection ~ 1500 1000
-Wire Wire Line
-	1500 1000 1800 1000
 Wire Wire Line
 	2000 1000 2250 1000
 $Comp
@@ -406,9 +401,9 @@ F 3 "" H 2250 1000 50  0001 C CNN
 	1    2250 1000
 	1    0    0    -1  
 $EndComp
-Text GLabel 1300 1100 2    50   Input ~ 0
+Text GLabel 1550 1350 2    50   Input ~ 0
 D-
-Text GLabel 1300 1200 2    50   Input ~ 0
+Text GLabel 1550 1125 2    50   Input ~ 0
 D+
 Wire Wire Line
 	1300 1400 1400 1400
@@ -3355,35 +3350,6 @@ F 3 "" H 10725 2725 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	10700 2450 10700 2700
-$Comp
-L keyboard_layout_jopr-rescue:MX-LED-MX_Alps_Hybrid MX_Q0
-U 1 1 5EF0C486
-P 10550 2750
-F 0 "MX_Q0" H 10632 2974 60  0000 C CNN
-F 1 "MX-LED" H 10632 2900 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U" H 9925 2725 60  0001 C CNN
-F 3 "" H 9925 2725 60  0001 C CNN
-	1    10550 2750
-	1    0    0    -1  
-$EndComp
-Connection ~ 10700 2700
-Wire Wire Line
-	10700 2700 10700 3350
-$Comp
-L power:GND #PWR016
-U 1 1 5EF0C48E
-P 10600 2850
-F 0 "#PWR016" H 10600 2600 50  0001 C CNN
-F 1 "GND" H 10605 2677 50  0000 C CNN
-F 2 "" H 10600 2850 50  0001 C CNN
-F 3 "" H 10600 2850 50  0001 C CNN
-	1    10600 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10550 2850 10600 2850
-Wire Wire Line
 	10050 2900 10100 2900
 $Comp
 L Device:D_Small D_P0
@@ -3396,30 +3362,6 @@ F 3 "~" V 10050 3000 50  0001 C CNN
 	1    10050 3000
 	0    -1   -1   0   
 $EndComp
-$Comp
-L keyboard_layout_jopr-rescue:MX-LED-MX_Alps_Hybrid MX_P0
-U 1 1 5EF0C49C
-P 10150 2750
-F 0 "MX_P0" H 10232 2974 60  0000 C CNN
-F 1 "MX-LED" H 10232 2900 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U" H 9525 2725 60  0001 C CNN
-F 3 "" H 9525 2725 60  0001 C CNN
-	1    10150 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR015
-U 1 1 5EF0C4A2
-P 10200 2850
-F 0 "#PWR015" H 10200 2600 50  0001 C CNN
-F 1 "GND" H 10205 2677 50  0000 C CNN
-F 2 "" H 10200 2850 50  0001 C CNN
-F 3 "" H 10200 2850 50  0001 C CNN
-	1    10200 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	10150 2850 10200 2850
 Wire Wire Line
 	8850 3100 9250 3100
 Connection ~ 9250 3100
@@ -3465,44 +3407,6 @@ F 3 "~" V 9650 3000 50  0001 C CNN
 	1    9650 3000
 	0    -1   -1   0   
 $EndComp
-$Comp
-L keyboard_layout_jopr-rescue:MX-LED-MX_Alps_Hybrid MX_O0
-U 1 1 5EF0C4C2
-P 9750 2750
-F 0 "MX_O0" H 9832 2974 60  0000 C CNN
-F 1 "MX-LED" H 9832 2900 20  0000 C CNN
-F 2 "MX_Only:MXOnly-1U" H 9125 2725 60  0001 C CNN
-F 3 "" H 9125 2725 60  0001 C CNN
-	1    9750 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR014
-U 1 1 5EF0C4C8
-P 9800 2850
-F 0 "#PWR014" H 9800 2600 50  0001 C CNN
-F 1 "GND" H 9805 2677 50  0000 C CNN
-F 2 "" H 9800 2850 50  0001 C CNN
-F 3 "" H 9800 2850 50  0001 C CNN
-	1    9800 2850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9750 2850 9800 2850
-Wire Wire Line
-	9850 2750 9850 2450
-Wire Wire Line
-	9850 2450 9750 2450
-Wire Wire Line
-	10300 2450 10300 2700
-Connection ~ 10300 2700
-Wire Wire Line
-	10300 2700 10300 3350
-Wire Wire Line
-	9900 2450 9900 2700
-Connection ~ 9900 2700
-Wire Wire Line
-	9900 2700 9900 3350
 Connection ~ 10050 3100
 Wire Wire Line
 	10050 3100 10450 3100
@@ -3511,20 +3415,6 @@ Wire Wire Line
 Connection ~ 9650 3100
 Wire Wire Line
 	9650 3100 10050 3100
-Wire Wire Line
-	10250 2750 10250 2450
-Wire Wire Line
-	10250 2450 10150 2450
-Wire Wire Line
-	10650 2750 10650 2450
-Wire Wire Line
-	10650 2450 10550 2450
-Text GLabel 9750 2450 1    50   Input ~ 0
-LED_NMLK
-Text GLabel 10150 2450 1    50   Input ~ 0
-LED_CPLK
-Text GLabel 10550 2450 1    50   Input ~ 0
-LED_SYSREQ
 $Comp
 L keyboard_layout_jopr-rescue:MX-NoLED-MX_Alps_Hybrid MX_I1
 U 1 1 5EF0C4E3
@@ -3759,4 +3649,99 @@ Text GLabel 3150 5200 2    50   Input ~ 0
 COL_E
 Text GLabel 3150 5100 2    50   Input ~ 0
 COL_D
+Connection ~ 1750 1000
+Wire Wire Line
+	1750 1000 1800 1000
+Wire Wire Line
+	1300 1000 1750 1000
+$Comp
+L Power_Protection:TPD4EUSB30 U2
+U 1 1 5D1EE78C
+P 2050 1350
+F 0 "U2" H 2050 1831 50  0000 C CNN
+F 1 "TPD4EUSB30" H 2050 1740 50  0000 C CNN
+F 2 "SOT65P210X110-6N:SOT65P210X110-6N" H 1100 950 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tpd2eusb30a.pdf" H 2050 1350 50  0001 C CNN
+	1    2050 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1300 1100 1475 1100
+Wire Wire Line
+	1475 1100 1475 1450
+Wire Wire Line
+	1475 1450 1550 1450
+Wire Wire Line
+	1300 1200 1400 1200
+Wire Wire Line
+	1400 1200 1400 1250
+Wire Wire Line
+	1400 1250 1550 1250
+Wire Wire Line
+	1550 1250 1550 1125
+Connection ~ 1550 1250
+Wire Wire Line
+	1550 1450 1550 1350
+Connection ~ 1550 1450
+$Comp
+L power:GND #PWR0101
+U 1 1 5D2AE673
+P 2125 1850
+F 0 "#PWR0101" H 2125 1600 50  0001 C CNN
+F 1 "GND" H 2130 1677 50  0000 C CNN
+F 2 "" H 2125 1850 50  0001 C CNN
+F 3 "" H 2125 1850 50  0001 C CNN
+	1    2125 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 1850 2125 1850
+Wire Wire Line
+	10700 2450 10700 2700
+Wire Wire Line
+	10300 2450 10300 2700
+Wire Wire Line
+	9900 2450 9900 2700
+$Comp
+L keyboard_layout_jopr-rescue:MX-NoLED-MX_Alps_Hybrid MX_O0
+U 1 1 5D2DFAA9
+P 9750 2750
+F 0 "MX_O0" H 9783 2973 60  0000 C CNN
+F 1 "MX-NoLED" H 9783 2899 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 9125 2725 60  0001 C CNN
+F 3 "" H 9125 2725 60  0001 C CNN
+	1    9750 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 9900 2700
+Wire Wire Line
+	9900 2700 9900 3350
+$Comp
+L keyboard_layout_jopr-rescue:MX-NoLED-MX_Alps_Hybrid MX_P0
+U 1 1 5D2E0080
+P 10150 2750
+F 0 "MX_P0" H 10183 2973 60  0000 C CNN
+F 1 "MX-NoLED" H 10183 2899 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 9525 2725 60  0001 C CNN
+F 3 "" H 9525 2725 60  0001 C CNN
+	1    10150 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 10300 2700
+Wire Wire Line
+	10300 2700 10300 3350
+$Comp
+L keyboard_layout_jopr-rescue:MX-NoLED-MX_Alps_Hybrid MX_Q0
+U 1 1 5D2E0A97
+P 10550 2750
+F 0 "MX_Q0" H 10583 2973 60  0000 C CNN
+F 1 "MX-NoLED" H 10583 2899 20  0000 C CNN
+F 2 "MX_Only:MXOnly-1U-NoLED" H 9925 2725 60  0001 C CNN
+F 3 "" H 9925 2725 60  0001 C CNN
+	1    10550 2750
+	1    0    0    -1  
+$EndComp
+Connection ~ 10700 2700
+Wire Wire Line
+	10700 2700 10700 3350
 $EndSCHEMATC

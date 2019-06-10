@@ -1,4 +1,4 @@
-16258649482783894
+16293436006647789
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -51107,13 +51107,6 @@ MXOnly-ISO
 4
 4
 MX_Only
-MXOnly-ISO-NoLED
-
-
-0
-2
-2
-MX_Only
 MXOnly-ISO-ReversedStabilizers
 
 
@@ -67108,6 +67101,13 @@ https://www.farnell.com/cad/316865.pdf?_ga=2.37208032.177107060.1530611323-24901
 0
 48
 48
+SOT65P210X110-6N
+SOT65P210X110-6N
+
+
+0
+6
+6
 Symbol
 CE-Logo_8.5x6mm_SilkScreen
 CE marking
