@@ -1,5 +1,6 @@
 # keyboard_layout_jopr
-This is my first attempt at a custom keyboard. It's inspired, among others, by https://github.com/itractus/KeyBored
+This is my first attempt at a custom keyboard. It's inspired, among others, by https://github.com/itractus/KeyBored  
+The firmware is located at https://github.com/joelproko/qmk_firmware/tree/jopr
 
 This is a layout of what the microcontroller will probably send for which key:  
 
@@ -22,4 +23,6 @@ There's a PDF of the schematic
 and a PDF of the PCB
 ![here](https://github.com/joelproko/keyboard_layout_jopr/raw/master/keyboard_layout_jopr.kicad_pcb.all_layers.pdf) (and [a version with separate pages for each layer](https://github.com/joelproko/keyboard_layout_jopr/raw/master/keyboard_layout_jopr.kicad_pcb.page_per_layer.pdf))
 
-The firmware is located at https://github.com/joelproko/qmk_firmware/tree/jopr
+2019-06-22:  
+So far, the PCB and the keycaps have arrived. I made a low quality photo on my phone.  
+![bad photograph of keycaps on top of PCB](https://raw.githubusercontent.com/joelproko/keyboard_layout_jopr/master/keycaps_and_PCB.jpg)
